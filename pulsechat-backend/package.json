@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +25,7 @@
     "jsonwebtoken": "^9.0.3",
     "pino": "^10.4.0",
     "pino-http": "^11.0.0",
+    "redis": "^6.3.0",
     "socket.io": "^4.8.4",
     "socket.io-client": "^4.8.4",
     "zod": "^4.6.7"
